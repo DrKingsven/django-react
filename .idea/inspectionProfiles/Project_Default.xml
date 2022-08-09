@@ -1,0 +1,21 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="lk.lk.settings.profiluser" />
+          <option value="lk.lk.settings.comment" />
+          <option value="profiluser" />
+          <option value="lk.lk.urls.rest_framework_simplejwt" />
+          <option value="lk.task.models.Task.objects" />
+          <option value="lk.profiluser.models.Profiluser.objects" />
+          <option value="lk.comment.models.Сomment.objects" />
+          <option value="lk.users.views.rest_framework_simplejwt" />
+          <option value="lk.users.*" />
+          <option value="lk.task.views.TaskAPIList.CustomUser" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

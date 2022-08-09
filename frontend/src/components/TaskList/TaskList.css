@@ -1,0 +1,27 @@
+.TabelPad {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.newTask{
+    width: 50px;
+}
+.formulationTask{
+    /*width: 40%;*/
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.buttonTask{
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+height: 70px;
+}
+.Tabel {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%)
+}
