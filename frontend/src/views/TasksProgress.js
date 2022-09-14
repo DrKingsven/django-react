@@ -7,20 +7,20 @@ import Footer from "../components/Footer/Footer";
 import NaviBlock from "../components/NaviBlock/Navbar";
 import LeftColumn from "../components/leftColumn/leftColumn";
 import TaskList from "../components/TaskList/TaskList";
-import NewTask from "../components/TaskList/NewTask/NewTask";
+import TaskListCompleted from "../components/TaskList/TaskListCompleted";
+import TaskListProgress from "../components/TaskList/TaskListProgress";
 
 
 
 
-const Tasks = () => {
+const TasksProgress = () => {
 
     return (<div className={"App"}>
         <div className={"contet"}>
-            <TaskList/>
-
+            <TaskListProgress/>
         </div>
     </div>);
 };
 
 
-export default (Tasks);
+export default (TasksProgress);

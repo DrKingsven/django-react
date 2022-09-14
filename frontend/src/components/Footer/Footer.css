@@ -8,10 +8,10 @@
 /*}*/
 
 .footer {
-
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     padding-top: 29px;
     background-color: #363b3f;
-    position: absolute;
+    position: revert;
     margin-top: auto;
     display: block;
     width: 100%;

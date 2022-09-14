@@ -1,12 +1,49 @@
-.left-column {
+.leftColumNav {
+
+    background: #fcfcfc;
+    min-height: 700px;height: 100%;
+    width: 200px;
+    border-color: black;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    border-radius: 3px;
-    margin-top: 10px;
-    float: left;
-    width: 150px;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    background-color: #ffffff;
-    height: 100%;
+margin-right: 10px;
+}
+.listGroup {
+    width: 200px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2f2f2f;
+}
+.listGroup:hover {
+
+    color: #ffffff;
+    background-color: #0087ff;
+}
+
+.listGroup2 {
+    width: 200px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2f2f2f;
+}
+.listGroup2:hover {
+
+    color: #ffffff;
+    background-color: #ec2929;
+}
+.listGroup3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 195px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #0495fd;
+    border-radius: 8px;
+    margin-left: 2.5px;
+
+}
+.listGroup3:hover {
+    background-color: #00487c;
+    color: #ffffff;
+
 }

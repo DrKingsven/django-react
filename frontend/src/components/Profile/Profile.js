@@ -2,34 +2,62 @@ import React from "react";
 import {useEffect, useState} from "react";
 import useAxios from "../../utils/useAxios";
 import "./Profile.css"
-import {Card, Container, Figure, ListGroup} from "react-bootstrap";
-import UserIcon from "../../assets/imges/ProfileUserImg.png"
-import HeaderImg from "../../assets/imges/logoNecFooter.png"
+import {Button, Card, Container, Figure, ListGroup, Offcanvas} from "react-bootstrap";
+import logo from '../../assets/imges/logoNecFooter.png'
+import "../leftColumn/leftColumn.css"
+import {useContext} from "react";
+import AuthContext from "../../context/AuthContext";
+
 const Profile = () => {
+    // console.log(person)
+
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
     const [res, setRes] = useState([]);
+
     const [loading, setLoading] = useState(true)
     const api = useAxios();
+    const person = localStorage.getItem("person")
+    const author = localStorage.getItem("author")
+    // console.log(author)
+// console.log(person)
+
+
     const fetchData = async () => {
+        // console.log(masClients)
         try {
-            const response = await api.get(`/v1/profilusers`);
-            let data = await response.data.results
-            setRes(data);
+
+            let dataUser = []
+            if (person) {
+                const response = await api.get(`/v1/profiluser/${person}`);
+                let data = await response.data
+                dataUser.push(data)
+                setRes(dataUser);
+            }
         } catch {
             setRes("Something went wrong");
         }
         setLoading(false)
     };
+    // console.log(res)
     useEffect(() => {
+
         fetchData();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    console.log(res)
+    }, [person]);
+
+    // console.log(res)
     const taskListRender = res.map(userId => <ListGroup className="list-group-flush" key={userId.id}>
-        <Card.Img style={{marginLeft: "20px", marginTop: "20px", width: "15%"}} variant="top" src={UserIcon} />
-        <Card.Body>
-            <Card.Title style={{fontWeight: "500", color: "#ffffff"}}>{userId.title}</Card.Title>
-            <Card.Text style={{fontWeight: "500", color: "#ffffff"}}>Email: {userId.email_address}</Card.Text>
-        </Card.Body>
+        {/*<Card.Img style={{marginLeft: "20px", marginTop: "20px", width: "15%"}} variant="top" src={UserIcon} />*/}
+
+        <ListGroup.Item style={{fontWeight: "700"}}>
+        {userId.title}
+          </ListGroup.Item>
+        <ListGroup.Item style={{fontWeight: "500"}}>Email: {userId.email_address}</ListGroup.Item>
         <ListGroup.Item style={{fontWeight: "500",}}>ИНН: {userId.counterparty_inn}</ListGroup.Item>
         <ListGroup.Item style={{fontWeight: "500",}}>Адрес: {userId.client_address}</ListGroup.Item>
         <ListGroup.Item style={{fontWeight: "500",}}>Тип оплаты: {userId.type_payment}</ListGroup.Item>
@@ -37,35 +65,37 @@ const Profile = () => {
         <ListGroup.Item style={{fontWeight: "500",}}>Холдинг: {userId.holding}</ListGroup.Item>
         <ListGroup.Item style={{fontWeight: "500",}}>Форма работы: {userId.form_clients_work}</ListGroup.Item>
     </ListGroup>)
+
     return (
+        <>
+        <a onClick={handleShow}>
+            ПРОФИЛЬ
+        </a>
 
-            <div>
-                <div className={"userProfile"}>
-                    <div className={"imgProfile"}>
-                        <img src={UserIcon} style={{width: "150px"}}/>
-                    </div>
-<div className={"headerUser"}>
-<img src={HeaderImg} style={{width: "600px"}}/>
-</div>
+        <Offcanvas show={show} onHide={handleClose}>
 
+            <Offcanvas.Header closeButton style={{backgroundColor: "#0086fd"}}>
+                <Offcanvas.Title>
 
-                    <div className={"leftColum"}>
-
-                    </div>
-                    <div className={"rightColum"}>
-
-                    </div>
-                </div>
-
-                {/*<Card style={{backgroundColor: "#4b6bc0", width: '950px' }}>*/}
-                {/*    <h1 style={{color: "#ffffff",marginLeft: "20px", marginTop: "20px", marginBottom: "20px"}}>Карточка пользователя</h1>*/}
-                {/*        {taskListRender}*/}
-                {/*</Card>*/}
+                    <img style={{width: "300px"}} src={logo}/>
+                </Offcanvas.Title>
 
 
-                    {loading && 'Загрузка...'}
+            </Offcanvas.Header>
+            <Offcanvas.Body>
 
-            </div>
-    )
+
+                   {/*<img style={{width: "300px", marginLeft: "150px", paddingTop: "5px"}} src={logo}/>*/}
+                   {/*<h1 style={{color: "#ffffff"}}>ПРОФИЛЬ</h1>*/}
+
+                       {taskListRender}
+
+
+            </Offcanvas.Body>
+
+        </Offcanvas>
+        </>
+ )
 }
+
 export default Profile

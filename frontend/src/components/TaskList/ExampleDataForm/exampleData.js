@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 import useAxios from "../../../utils/useAxios";
 import {Button, Form, ListGroup, Modal} from "react-bootstrap";
-
+import "./ExampleDataForm.css"
+import NewComment from "./newComment";
 function ExampleData(props) {
     const [lgShow, setLgShow] = useState(false);
     const [res, setRes] = useState([]);
@@ -9,7 +10,7 @@ function ExampleData(props) {
     const api = useAxios();
     const fetchData = async (refTask = 0) => {
         try {
-            const response = await api.get(`/v1/comments/?refTask=${props.taskId.id}`);
+            const response = await api.get(`/v1/comments/?refUser=${props.taskId.id}`);
             let data = await response.data.results
             setRes(data);
         } catch {
@@ -20,7 +21,6 @@ function ExampleData(props) {
     useEffect(() => {
         fetchData();
     }, []);
-    console.log(res)
     const commentListRender = res.map(commentId => <ListGroup variant="flush" key={commentId.id}>
             <ListGroup.Item><Form.Control plaintext readOnly defaultValue={commentId.author}/></ListGroup.Item>
             <ListGroup.Item><Form.Control plaintext readOnly defaultValue={commentId.dateTime}/></ListGroup.Item>
@@ -30,7 +30,7 @@ function ExampleData(props) {
         </ListGroup>
     )
     return (<>
-        <Button className={"buttonTask"} onClick={() => setLgShow(true)}>Открыть</Button>
+        <button className={"buttonOpenTask"}  onClick={() => setLgShow(true)}>.</button>
         <Modal
             size="lg"
             show={lgShow}
@@ -53,6 +53,8 @@ function ExampleData(props) {
                         <ListGroup.Item><Form.Control plaintext readOnly defaultValue={" Дата постановки: " + props.taskId.date}/></ListGroup.Item>
                         <ListGroup.Item><Form.Control plaintext readOnly defaultValue={"Срок выполнения задачи: " + props.taskId.due_date}/></ListGroup.Item>
                         <ListGroup.Item> <Form.Control plaintext readOnly defaultValue={"Начало работы: " + props.taskId.get_started}/></ListGroup.Item>
+                        <ListGroup.Item> <Form.Control plaintext readOnly defaultValue={"Автор: " + props.taskId.author}/></ListGroup.Item>
+
                         <ListGroup.Item></ListGroup.Item>
                     </ListGroup>
                     <div>
@@ -64,8 +66,10 @@ function ExampleData(props) {
                     </div>
                     <div>
                         <h3>Комментарии к задаче:</h3>
-                        {loading}
+                        {/*{loading}*/}
                         {commentListRender}
+                        <NewComment id={props.taskId.id}/>
+
                     </div>
                 </Form>
             </Modal.Body>

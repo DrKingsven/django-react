@@ -3,47 +3,101 @@ import {Button, Container, Form} from "react-bootstrap";
 import "./EntryForm.css";
 import {useContext} from "react";
 import AuthContext from "../../context/AuthContext";
+import {useForm} from "react-hook-form";
 import logo from "../../assets/imges/logoNecFooter.png";
 import {Link} from "react-router-dom";
 import backdrop from "bootstrap/js/src/util/backdrop";
+// import data from "bootstrap/js/src/dom/data";
+
+
+
+
+
 export const  EntryForm = () => {
+
     const { loginUser } = useContext(AuthContext);
-    const handleSubmit = e => {
-        e.preventDefault();
-        const username = e.target.username.value;
-        const password = e.target.password.value;
-        username.length > 0 && loginUser(username, password);
-    };
+
+        const {
+            register,
+            formState: {
+              errors
+            },
+            handleSubmit,
+            reset,
+        } = useForm({
+            mode: "onBlur"
+        });
+
+        const onSubmit = (data) => {
+            // const handleSubmit = e => {
+            // data.preventDefault();
+                const username = data.username;
+                const password = data.password;
+                username.length > 0 && loginUser(username, password);
+
+
+
+            // alert(JSON.stringify(data));
+            // reset();
+        }
+
     return (
         <div className={"context" }>
-             <Container className={"container-my "} style={{backgroundColor: "#eeeaea"}}>
-             <Form onSubmit={handleSubmit}  >
-                 <Form.Group className="mb-3 " controlId="formBasicEmail">
-                     <Form.Label htmlFor="username">Вход</Form.Label>
-                     <br/>
+            {/*<Container className={"container-my "}>*/}
+            <form className={"form"} onSubmit={handleSubmit(onSubmit)}>
+                <div style={{justifyContent: "center", textAlign :"center"}}>
+                <h2 className={"h2"}>Войти:</h2>
 
-                     <Form.Control type="tel" id="username" placeholder="Телефон"  />
-                     <Form.Text className="text-muted">
-                         Введите номер телефона прописаный в договоре без (+)
-                     </Form.Text>
-                 </Form.Group>
-                 <Form.Group className="mb-3" controlId="formBasicPassword">
+                <label style={{textAlign: "left", color: "#2a2929"}}>
+                    Номер телефона:
+                    <input style={{width: "400px"}}
+                    {...register('username', {
+                        required: '⛔️Поле обязательно к заполнению',
+                        minLength: {
+                            value: 11,
+                            message: '⛔️Введите номер в формате X XXX XXX XX XX'
+                        },
 
-                     {/*<Form.Label>Пароль</Form.Label>*/}
-                     <Form.Control type="password" id="password" placeholder="Пароль"/>
-                     <Form.Text className="text-muted">
-                         Введите ранее полученый пароль
-                     </Form.Text>
-                 </Form.Group>
+                        maxLength: {
+                            value: 11,
+                            message: '⛔️Введите номер в формате X XXX XXX XX XX'
+                        }
+                    })}
+                />
+                </label>
+                <div>
+                    {errors?.username && <p className={"p"}>{errors?.username?.message || "Error!"}</p>}
+                </div>
 
-            <Button variant="primary" type="submit" style={{marginRight: 5}}>
-                     Войти
-                 </Button >
-                 <Button href={"/register"} style={{backgroundColor: "#224cbd"}} variant="primary" type="submit">
-                     Регистрация
-                 </Button >
-             </Form>
-             </Container>
+                    <label style={{textAlign: "left", color: "#2a2929"}}>
+                        Пароль:
+                        <input style={{width: "400px"}} type={"password"}
+                               {...register('password', {
+                                   required: "⛔️Поле обязательно к заполнению",
+
+                                   minLength: {
+                                       value: 6,
+                                       message: '⛔️Пароль должен быть 6 символов'
+                                   },
+                                   maxLength: {
+                                       value: 6,
+                                       message: '⛔️Пароль должен быть 6 символов'
+                                   }
+                               })}
+                        />
+                    </label>
+                    <div>
+                        {errors?.password && <p className={"p"}>{errors?.password?.message || "Error!"}</p>}
+                    </div>
+                    {/*<div style={{justifyContent: "center"}}>*/}
+                        <button className={"buttonFormAut"}  type="submit">Войти</button>
+
+                         <Button className={"buttonFormReg"} href={"/register"} variant="primary" type="submit">
+                             Получить пароль
+                         </Button >
+                </div>
+            </form>
+
             <div className="area">
                 <ul className="circles">
                     <li></li>
@@ -61,7 +115,7 @@ export const  EntryForm = () => {
             </div>
         </div>
 
-    );
+    )
 
 }
 

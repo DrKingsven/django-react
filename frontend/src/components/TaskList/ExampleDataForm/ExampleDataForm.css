@@ -1,0 +1,15 @@
+.buttonOpenTask{
+    width: 900px;
+    height: 40px;
+    position: absolute;
+    border: medium none;
+    background-image: none;
+    background: transparent;
+    float: left;
+    background-color: transparent;
+    color: transparent;
+}
+.buttonOpenTask:hover{
+
+    background-color: rgba(4, 73, 255, 0.21);
+}
