@@ -47,3 +47,10 @@ margin-right: 10px;
     color: #ffffff;
 
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .leftColumNav{
+        display: none;
+        margin-right: 0;
+
+    }
+}

@@ -66,7 +66,7 @@ function ExampleData(props) {
                     </div>
                     <div>
                         <h3>Комментарии к задаче:</h3>
-                        {/*{loading}*/}
+                        {loading}
                         {commentListRender}
                         <NewComment id={props.taskId.id}/>
 

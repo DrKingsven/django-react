@@ -1,11 +1,9 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
-import React, {useEffect} from "react";
+import React from "react";
 import "./NaviBlock.css"
 import {Button, Nav} from "react-bootstrap";
 import {Navbar} from "react-bootstrap";
-import {Container} from "react-bootstrap";
 import logo from "../../assets/imges/logoNec.png"
 import Profile from "../Profile/Profile";
 const NaviBlock = () => {
@@ -22,19 +20,19 @@ const NaviBlock = () => {
                 {user ? (
             <>
                     <Nav>
-                        <Navbar.Brand href="/" style={{color: "black"}}><img style={{width: "150px"}} src={logo}/></Navbar.Brand>
-                        <Nav.Link href="/protected"style={{color: "#2f2f2f", marginTop: "10px", fontWeight: "bold"}}>ЗАДАЧИ</Nav.Link>
-                        <Nav.Link style={{color: "#2f2f2f", marginTop: "10px", fontWeight: "bold"}}><Profile/></Nav.Link>
+                        <Navbar.Brand href="/" className={"navbarBrand"}><img className={"navbarBrandLogo"} src={logo}/></Navbar.Brand>
+                        <Nav.Link href="/protected" className={"navLink"}>ЗАДАЧИ</Nav.Link>
+                        <Nav.Link className={"navLink"}><Profile/></Nav.Link>
 
-                        <Nav.Link style={{marginLeft: "500px", marginTop: "10px", fontWeight: "bold",}} onClick={logoutUser}>ВЫЙТИ</Nav.Link>
+                        <Nav.Link className={"navLink"} onClick={logoutUser}>ВЫЙТИ</Nav.Link>
                     </Nav>
             </>
           ) : (
             <>
                     <Nav>
-                        <Navbar.Brand href="/" style={{color: "black"}}><img style={{width: "150px"}} src={logo}/></Navbar.Brand>
-                        <Nav.Link href="/login" style={{color: "black"}}>Войти</Nav.Link>
-                        <Nav.Link  href="/register">Регистрация</Nav.Link>
+                        <Navbar.Brand href="/" className={"navbarBrand"}><img style={{width: "150px"}} src={logo}/></Navbar.Brand>
+                        <Nav.Link href="/login" className={"navbarBrand"}>Войти</Nav.Link>
+                        <Nav.Link  href="/register" className={"navbarBrand"}>Регистрация</Nav.Link>
                     </Nav>
             </>
                 )}

@@ -17,4 +17,33 @@
     justify-content: center;
 
 }
+.navbarBrandLogo{
+    width: 150px;
 
+}
+.navbarBrand{
+    color: black;
+}
+
+.navLink{
+    color: #2f2f2f;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .navLink{
+        font-size: 15px;
+        margin-top: 5px;
+
+    }
+    .navBar{
+        width: 320px;
+    }
+    .header{width: 100%}
+
+    .navbarBrandLogo{
+        width: 100px;
+
+    }
+}
