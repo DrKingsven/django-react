@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af9f7d2c-18dc-4c49-8d19-ff0b3d5100e3" name="Changes" comment="Сайт 1.1">
+      <change afterPath="$PROJECT_DIR$/lk/comment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/comment/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/lk/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/lk/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/lk/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/lk/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/lk/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newComment/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/migrations/0002_remove_newtask_author.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/migrations/0003_newtask_author.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/newTask/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/profiluser/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/migrations/0002_rename_username_registeruser_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/registerUser/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/task/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lk/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django-react-auth.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NaviBlock/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NaviBlock/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NaviBlock/NaviBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NaviBlock/NaviBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ScrollingSlides/autHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ScrollingSlides/autHome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/useAxios.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/useAxios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/homePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/loginPage.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Cc1GSxKi2w4uN9Zk0WUGhEzvRt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth\frontend\src\views" />
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth\frontend\src\components\TaskList" />
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth\frontend\src\components\Profile" />
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth\frontend\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth\lk" />
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth" />
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth\frontend\src\components\ScrollingSlides" />
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth\frontend\src\components\TaskList" />
+      <recent name="C:\Users\kings\WebstormProjects\django-react-auth\frontend\src\components\Profile" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="useAxios.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/frontend/src/utils/useAxios.js" working-dir="$PROJECT_DIR$/frontend/src/utils">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af9f7d2c-18dc-4c49-8d19-ff0b3d5100e3" name="Changes" comment="" />
+      <created>1659086962980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659086962980</updated>
+      <workItem from="1659086964449" duration="4952000" />
+      <workItem from="1659098954201" duration="6000" />
+      <workItem from="1659098989456" duration="31376000" />
+      <workItem from="1659428087798" duration="17314000" />
+      <workItem from="1659507637472" duration="63380000" />
+      <workItem from="1660026297773" duration="105653000" />
+      <workItem from="1660572900366" duration="640000" />
+      <workItem from="1660911421028" duration="2004000" />
+      <workItem from="1660996835785" duration="12473000" />
+      <workItem from="1661148581091" duration="25517000" />
+      <workItem from="1661235584362" duration="15600000" />
+      <workItem from="1661261432099" duration="50720000" />
+      <workItem from="1661853989786" duration="30906000" />
+      <workItem from="1662012538659" duration="28359000" />
+      <workItem from="1662358914990" duration="79175000" />
+      <workItem from="1662965088051" duration="32772000" />
+      <workItem from="1663135742918" duration="12738000" />
+      <workItem from="1663223053830" duration="66638000" />
+      <workItem from="1664175112760" duration="12688000" />
+      <workItem from="1664279816073" duration="739000" />
+      <workItem from="1664280594890" duration="211000" />
+      <workItem from="1664280857000" duration="1698000" />
+      <workItem from="1664282953303" duration="653000" />
+      <workItem from="1664283637769" duration="1041000" />
+      <workItem from="1664284721243" duration="10457000" />
+    </task>
+    <task id="LOCAL-00001" summary="Новый мир">
+      <created>1660031098946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660031098946</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Сайт 1.0">
+      <created>1663160122991</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663160122991</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Сайт 1.1">
+      <created>1663666244130</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663666244130</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Новый мир" />
+    <MESSAGE value="Сайт 1.0" />
+    <MESSAGE value="Сайт 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сайт 1.1" />
+  </component>
+</project>

@@ -3,10 +3,16 @@ import Img3 from "../assets/imges/imgHome3.svg";
 import Img1 from "../assets/imges/imgHome1.svg";
 import Img4 from "../assets/imges/imgHome4.svg";
 import Img5 from "../assets/imges/imgHome5.svg";
+import Img6 from "../assets/imges/img6.svg";
+
 import logoBlue from "../assets/imges/logoNec.png";
+import NotPageDesktop from "../components/notDesktop";
+import React from "react";
 const Home = () => {
     return(
     <>
+        <NotPageDesktop/>
+
         <div className={"section"}>
         <div className={"authAnimated"}>
             <img className={"LogoHeader"} src={logo}/>
@@ -18,6 +24,7 @@ const Home = () => {
         </div>
         <div className={"contentDivAut"}>
             <div className={"card1"}>
+
                 <div className={"bodyTextCard1"}>
                     В личном кабинете вы сможете оперативно создавать и просматривать ваши задачи через сайт в режиме
                     круглосуточного доступа.<br/>
@@ -26,6 +33,7 @@ const Home = () => {
                 <div>
                     <img className={"img3"}  src={Img3}/>
                 </div>
+
             </div>
             <div className={"card2"}>
 
@@ -48,7 +56,12 @@ const Home = () => {
                     <img className={"img4"} src={Img4}/>
                 </div>
             </div>
+            <div>
+                <img className={"img6"} src={Img6}/>
+
+            </div>
             <div className={"bifCardsAuth"}>
+
                 <div className={"bodyTextCard4"}>
                     Мы ставим приоритеты в виде четкого следования срокам и качества оказания услуг и теперь вы можете
                     убедиться в этом, полностью погружаясь в исполнение порученной задачи или проекта.<br/>

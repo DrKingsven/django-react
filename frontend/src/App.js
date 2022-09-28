@@ -1,5 +1,6 @@
 import React, {Profiler} from "react";
 import "./index.css";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from "./components/Footer/Footer";
@@ -21,11 +22,10 @@ import HomePage from "./views/startPage";
 import Start from "./views/startPage";
 import startPage from "./views/startPage";
 import homePage from "./views/homePage";
+import NotPageDesktop from "./components/notDesktop";
 function App() {
-
   return (
     <Router>
-
       <div className={"App"}>
 
         <AuthProvider>
@@ -51,9 +51,13 @@ function App() {
          </div>
          </AuthProvider>
          <Footer />
+
        </div>
+
      </Router>
-  );
+
+
+);
 }
 
 export default App;

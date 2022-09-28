@@ -6,12 +6,13 @@ import {Button, Nav} from "react-bootstrap";
 import {Navbar} from "react-bootstrap";
 import logo from "../../assets/imges/logoNec.png"
 import Profile from "../Profile/Profile";
+import NotPageDesktop from "../notDesktop";
 const NaviBlock = () => {
   const { user, logoutUser } = useContext(AuthContext);
 
   return (
           <div className={"header"}>
-
+              <NotPageDesktop/>
               <Navbar className={"navBar"}  variant="light">
 
                       <Nav className="me-auto">

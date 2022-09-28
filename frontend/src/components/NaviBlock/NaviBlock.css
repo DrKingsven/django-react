@@ -40,7 +40,8 @@
     .navBar{
         width: 320px;
     }
-    .header{width: 100%}
+    .header{        width: 100%;
+    }
 
     .navbarBrandLogo{
         width: 100px;
